@@ -1,0 +1,12 @@
+C:\Users\huseman.o\Desktop\programming-1\AboutMe\AboutMe\bin\Debug\AboutMe.exe.config
+C:\Users\huseman.o\Desktop\programming-1\AboutMe\AboutMe\bin\Debug\AboutMe.exe
+C:\Users\huseman.o\Desktop\programming-1\AboutMe\AboutMe\bin\Debug\AboutMe.dll
+C:\Users\huseman.o\Desktop\programming-1\AboutMe\AboutMe\bin\Debug\IronPython.dll
+C:\Users\huseman.o\Desktop\programming-1\AboutMe\AboutMe\bin\Debug\IronPython.Modules.dll
+C:\Users\huseman.o\Desktop\programming-1\AboutMe\AboutMe\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\huseman.o\Desktop\programming-1\AboutMe\AboutMe\bin\Debug\Microsoft.Scripting.dll
+C:\Users\huseman.o\Desktop\programming-1\AboutMe\AboutMe\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\huseman.o\Desktop\programming-1\AboutMe\AboutMe\obj\Debug\AboutMe.pyprojResolveAssemblyReference.cache
+C:\Users\huseman.o\Desktop\programming-1\AboutMe\AboutMe\obj\Debug\AboutMe.MainForm.resources
+C:\Users\huseman.o\Desktop\programming-1\AboutMe\AboutMe\obj\Debug\AboutMe.pyproj.GenerateResource.Cache
+C:\Users\huseman.o\Desktop\programming-1\AboutMe\AboutMe\obj\Debug\AboutMe.exe

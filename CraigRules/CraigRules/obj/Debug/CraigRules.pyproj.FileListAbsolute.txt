@@ -1,0 +1,12 @@
+C:\Users\huseman.o\Desktop\programming-1\CraigRules\CraigRules\bin\Debug\CraigRules.exe.config
+C:\Users\huseman.o\Desktop\programming-1\CraigRules\CraigRules\bin\Debug\CraigRules.exe
+C:\Users\huseman.o\Desktop\programming-1\CraigRules\CraigRules\bin\Debug\CraigRules.dll
+C:\Users\huseman.o\Desktop\programming-1\CraigRules\CraigRules\bin\Debug\IronPython.dll
+C:\Users\huseman.o\Desktop\programming-1\CraigRules\CraigRules\bin\Debug\IronPython.Modules.dll
+C:\Users\huseman.o\Desktop\programming-1\CraigRules\CraigRules\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\huseman.o\Desktop\programming-1\CraigRules\CraigRules\bin\Debug\Microsoft.Scripting.dll
+C:\Users\huseman.o\Desktop\programming-1\CraigRules\CraigRules\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\huseman.o\Desktop\programming-1\CraigRules\CraigRules\obj\Debug\CraigRules.pyprojResolveAssemblyReference.cache
+C:\Users\huseman.o\Desktop\programming-1\CraigRules\CraigRules\obj\Debug\CraigRules.MainForm.resources
+C:\Users\huseman.o\Desktop\programming-1\CraigRules\CraigRules\obj\Debug\CraigRules.pyproj.GenerateResource.Cache
+C:\Users\huseman.o\Desktop\programming-1\CraigRules\CraigRules\obj\Debug\CraigRules.exe
