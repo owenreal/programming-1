@@ -152,10 +152,15 @@ class MainForm(Form):
 
 
 	def Button1Click(self, sender, e):
-		A = int(self._textBox1.Text)
-		B = int(self._textBox2.Text)
-		C = int(self._textBox3.Text)
-
+		a = int(self._textBox1.Text)
+		b = int(self._textBox2.Text)
+		c = int(self._textBox3.Text)
+		
+		root1 = (-b + math.sqrt(b**2 - 4 * a * c)) / 2 * a
+		root2 = (-b - math.sqrt(b**2 - 4 * a * c)) / 2 * a
+		
+		self._label4.Text = str(root1)
+		self._label5.Text = str(root2) 
 	def Button2Click(self, sender, e):
 		self._textBox1.Text = ""
 		self._textBox2.Text = ""
