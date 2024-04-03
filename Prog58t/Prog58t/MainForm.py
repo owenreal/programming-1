@@ -237,11 +237,29 @@ class MainForm(Form):
 		change = recieved - purchase
 		self._label4.Text = str(change)
 		
-		dollars = change // 1
-		self._label5.Text = str(dollars)
+		dollars = 1
+		d_amount = change // dollars
+		change = change - d_amount * dollars
+		self._label5.Text = str(d_amount)
 		
-		quarters = (change - dollars) // 0.25
-		self._label6.Text = str(quarters)
+		quarters = 0.25
+		q_amount = change // quarters
+		change = change - q_amount * quarters
+		self._label6.Text = str(q_amount)
+		
+		dimes = 0.10
+		di_amount = change // dimes
+		change = change - di_amount * dimes
+		self._label7.Text = str(di_amount)
+		
+		nickles = 0.05
+		n_amount = change // nickles
+		change = change - n_amount * dimes
+		self._label8.Text = str(n_amount)
+		
+		pennies = 0.01
+		p_amount = change // pennies
+		self._label9.Text = str(p_amount)
 		
 	def Button2Click(self, sender, e):
 		self._textBox1.Text = ""
