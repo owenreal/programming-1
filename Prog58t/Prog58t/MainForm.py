@@ -254,7 +254,7 @@ class MainForm(Form):
 		
 		nickles = 0.05
 		n_amount = change // nickles
-		change = change - n_amount * dimes
+		change = change - n_amount * nickles
 		self._label8.Text = str(n_amount)
 		
 		pennies = 0.01
