@@ -21,12 +21,12 @@ class MainForm(Form):
 		self._listBox1.FormattingEnabled = True
 		self._listBox1.Location = System.Drawing.Point(13, 13)
 		self._listBox1.Name = "listBox1"
-		self._listBox1.Size = System.Drawing.Size(507, 277)
+		self._listBox1.Size = System.Drawing.Size(507, 290)
 		self._listBox1.TabIndex = 0
 		# 
 		# button1
 		# 
-		self._button1.Location = System.Drawing.Point(13, 303)
+		self._button1.Location = System.Drawing.Point(13, 309)
 		self._button1.Name = "button1"
 		self._button1.Size = System.Drawing.Size(84, 38)
 		self._button1.TabIndex = 1
@@ -36,7 +36,7 @@ class MainForm(Form):
 		# 
 		# button2
 		# 
-		self._button2.Location = System.Drawing.Point(226, 303)
+		self._button2.Location = System.Drawing.Point(226, 309)
 		self._button2.Name = "button2"
 		self._button2.Size = System.Drawing.Size(84, 38)
 		self._button2.TabIndex = 2
@@ -46,7 +46,7 @@ class MainForm(Form):
 		# 
 		# button3
 		# 
-		self._button3.Location = System.Drawing.Point(436, 303)
+		self._button3.Location = System.Drawing.Point(436, 309)
 		self._button3.Name = "button3"
 		self._button3.Size = System.Drawing.Size(84, 38)
 		self._button3.TabIndex = 3
@@ -56,7 +56,7 @@ class MainForm(Form):
 		# 
 		# MainForm
 		# 
-		self.ClientSize = System.Drawing.Size(532, 353)
+		self.ClientSize = System.Drawing.Size(532, 355)
 		self.Controls.Add(self._button3)
 		self.Controls.Add(self._button2)
 		self.Controls.Add(self._button1)
