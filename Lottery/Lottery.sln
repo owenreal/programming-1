@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.4
+Project("{FD48973F-F585-4F70-812B-4D0503B36CE9}") = "Lottery", "Lottery\Lottery.pyproj", "{63A0A22D-A1D0-4163-9732-14F0220C0C75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63A0A22D-A1D0-4163-9732-14F0220C0C75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63A0A22D-A1D0-4163-9732-14F0220C0C75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63A0A22D-A1D0-4163-9732-14F0220C0C75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63A0A22D-A1D0-4163-9732-14F0220C0C75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal
