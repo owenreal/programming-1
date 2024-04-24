@@ -1,0 +1,12 @@
+C:\Users\huseman.o\Desktop\programming-1\Lottery\Lottery\bin\Debug\Lottery.exe.config
+C:\Users\huseman.o\Desktop\programming-1\Lottery\Lottery\bin\Debug\Lottery.exe
+C:\Users\huseman.o\Desktop\programming-1\Lottery\Lottery\bin\Debug\Lottery.dll
+C:\Users\huseman.o\Desktop\programming-1\Lottery\Lottery\bin\Debug\IronPython.dll
+C:\Users\huseman.o\Desktop\programming-1\Lottery\Lottery\bin\Debug\IronPython.Modules.dll
+C:\Users\huseman.o\Desktop\programming-1\Lottery\Lottery\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\huseman.o\Desktop\programming-1\Lottery\Lottery\bin\Debug\Microsoft.Scripting.dll
+C:\Users\huseman.o\Desktop\programming-1\Lottery\Lottery\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\huseman.o\Desktop\programming-1\Lottery\Lottery\obj\Debug\Lottery.pyprojResolveAssemblyReference.cache
+C:\Users\huseman.o\Desktop\programming-1\Lottery\Lottery\obj\Debug\Lottery.MainForm.resources
+C:\Users\huseman.o\Desktop\programming-1\Lottery\Lottery\obj\Debug\Lottery.pyproj.GenerateResource.Cache
+C:\Users\huseman.o\Desktop\programming-1\Lottery\Lottery\obj\Debug\Lottery.exe
