@@ -298,14 +298,13 @@ class MainForm(Form):
 		num1 = 0
 		num2 = 0
 		num3 = 0
-		# copy numbers into timerTick
 		
 		if self._textBox1.Text == "":
 			MessageBox.Show("You must enter an amount to bet first!")
 			return
 		
 		money = float(self._label3.Text)
-		bet = floast(self._textBox1.Text)
+		bet = float(self._textBox1.Text)
 		money2 = money - bet
 		
 		if money == 0:
@@ -319,7 +318,7 @@ class MainForm(Form):
 			self._pictureBox1.Visible = True
 			self._timer1.Enabled = True
 			self._label3.Text = str(round(money2, 2))
-			self.progressBar1.Value = 0
+			self._progressBar1.Value = 0
 			
 			num1 = self.num1
 			num2 = self.num2 
@@ -330,7 +329,7 @@ class MainForm(Form):
 			if num1 == 2 and num2 == 2 and num3 ==2:
 				money2 += bet * 2
 			if num1 == 3 and num2 == 3 and num3 ==3:
-				money2 += bet * 3
+				money2 += bet * 2
 			if num1 == 4 and num2 == 4 and num3 ==4:
 				money2 += bet * 2
 			if num1 == 5 and num2 == 5 and num3 ==5:
@@ -368,6 +367,10 @@ class MainForm(Form):
 			num2 = rnd.Next(1, 6)
 			num3 = rnd.Next(1, 6)
 			
+			self.num1 = num1
+			self.num2 = num2
+			self.num3 = num3
+			
 			if num1 == 1:
 				pb1.BackgroundImage = im1
 			elif num1 == 2:
@@ -400,32 +403,10 @@ class MainForm(Form):
 				pb3.BackgroundImage = im4
 			elif num3 == 5:
 				pb3.BackgroundImage = im5
-				
-			if num4 == 1:
-				pb4.BackgroundImage = im1
-			elif num4 == 2:
-				pb4.BackgroundImage = im2
-			elif num4 == 3:
-				pb4.BackgroundImage = im3
-			elif num4 == 4:
-				pb4.BackgroundImage = im4
-			elif num4 == 5:
-				pb4.BackgroundImage = im5
-				
-			if num5 == 1:
-				pb5.BackgroundImage = im1
-			elif num5 == 2:
-				pb1.BackgroundImage = im2
-			elif num5 == 3:
-				pb5.BackgroundImage = im3
-			elif num5 == 4:
-				pb5.BackgroundImage = im4
-			elif num5 == 5:
-				pb5.BackgroundImage = im5
 			
 			self._progressBar1.Increment(1)
 			if self._progressBar1.Value == self._progressBar1.Maximum:
 				self._timer1.Enabled = False
-				self._pictureBox1.Visibile = False
+				self._pictureBox1.Visible = False
 				self._button1.BackgroundImage = levOff
 		pass
