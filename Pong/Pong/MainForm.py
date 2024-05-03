@@ -126,8 +126,57 @@ class MainForm(Form):
 
 
 	def TimerballTick(self, sender, e):
-		pass
-
+		ball = self._lblball
+		lpdl = self._lblleft
+		rpdl = self._lblright
+		rscore = int(self._rightscore.Text)
+		lscore = int(self._leftscore.Text) 
+		ball.Top += self.ballup 
+		ball.Left += 8 * self.balld 
+		
+		if ball.Right >= rpdl.Left and ball.Bottom >= rpdl.Top and ball.Top <= rpdl.Bottom:
+			self.balld = -1
+			self.ballup = self.R.Next(-5, -4)
+		elif ball.Left <= lpdl.Left and ball.Bottom >= lpdl.Top and ball.Top <= lpdl.Bottom:
+			self.balld = 1
+			self.ballup = self.R.Next(-5, -4)
+		
+		if ball.Top <= 0:
+			self.ballup *= -1
+		elif ball.Top >= self.Height:
+			self.ballup *= -1
+			
+		if ball.Top <= self.Top + 10:
+			self.ballup = 1
+		elif ball.Top >= self.Height - 50:
+			self.ballup = -1
+			
+		if ball.Location.X <= 0 or \
+			(ball.Location.X < lpdl.Left - 20 and ball.Location.Y < lpdl.Top):
+				""" finish left boundary """
+				pass
+			
+		if ball.Location.X >= self.Width or \
+			(ball.Location.X > rpdl.Right + 20 and ball.Location.Y > rpdl.Top):
+				lscore += 1
+				ball.Left = self.Width // 2
+				ball.Top = self.Height // 2
+				self._leftscore.Text = str(lscore)
+				
+		""" finish right score win condition """
+			
+		if lscore == 10:  # left win condition
+			self._timerball.Enabled = False
+			ball.Left = self.Width // 2
+			ball.Top = self.Height // 2
+			self.ballup = 0
+			self._lbltitle.Visible = True
+			self._lbltitle.Text = "Left Player Wins! Press R to restart"
+			
+		""" TODO: make left paddle ai beatable """
+		if self._timerboolean.Enabled == True:
+			lpdl.Top = ball.Top - 20
+			
 	def MainFormKeyDown(self, sender, e):
 		tball = self._timerball 
 		tdum = self._timerdummy
@@ -188,12 +237,14 @@ class MainForm(Form):
 			elif tright.Enabled and self.flagright == False:
 				tright.Enabled = False
 		
-		""" finish multiplayer controls """
-		if tmulti.Enabled and tball.Enabaled:
+		""" multiplayer controls done but fix ball """
+		if tmulti.Enabled and tball.Enabled:
 			if e.KeyCode == Keys.W:
-				pass
+				self.flagleft = False
+				tleft.Enabled = True
 			elif e.KeyCode == Keys.S:
-				pass
+				self.flagleft = True
+				tleft.Enabled = True
 
 	def MainFormLoad(self, sender, e):
 		""" TODO: add 3 secrets/cheats/easter eggs and finish multiplayer and scoreboard and dummy ai """ 
