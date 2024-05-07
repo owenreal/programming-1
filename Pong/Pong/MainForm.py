@@ -183,7 +183,7 @@ class MainForm(Form):
 			
 		""" TODO: make left paddle ai beatable """
 		if self._timerboolean.Enabled == True:
-			 pass
+			 lpdl.Top = ball.Top - 20
 			
 	def MainFormKeyDown(self, sender, e):
 		tball = self._timerball 
@@ -218,6 +218,9 @@ class MainForm(Form):
 			
 		if e.KeyCode == Keys.R:
 			reset()
+			
+		if e.KeyCode ==  Keys.B:
+			self._lblright.Height = 300
 		
 		""" add secret controls for easter eggs """
 		
