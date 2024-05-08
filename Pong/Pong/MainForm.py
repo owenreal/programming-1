@@ -198,6 +198,11 @@ class MainForm(Form):
 		title = self._lbltitle 
 		
 		def reset():
+			""" reset other secrets here """
+			self._lblright.Height = 100
+			self._lblleft.Height = 100
+			bl.BackColor = Color.White 
+			self.BackColor = Color.Black
 			title.Visible = True
 			title.Text = "Press Enter to start or M to start Multiplayer"
 			self._leftscore.Text = "0"
@@ -212,15 +217,15 @@ class MainForm(Form):
 			bl.Top = self.Height // 2
 			lblf.Top = (self.Height //2) - 50 + lblf.Height
 			lbrt.Top = (self.Height //2) - 50 + lbrt.Height
-			""" reset other secrets here """
-			bl.BackColor = Color.White 
-			self.BackColor = Color.Black
 			
 		if e.KeyCode == Keys.R:
 			reset()
 			
 		if e.KeyCode ==  Keys.B:
 			self._lblright.Height = 300
+			
+		if e.KeyCode ==  Keys.V:
+			self._lblleft.Height = 300
 		
 		""" add secret controls for easter eggs """
 		
@@ -257,7 +262,7 @@ class MainForm(Form):
 				tleft.Enabled = True
 
 	def MainFormLoad(self, sender, e):
-		""" TODO: add 2 secrets/cheats/easter eggs and dummy ai """ 
+		""" TODO: add 1 secrets/cheats/easter eggs and dummy ai """ 
 		self.balld = 1
 		self.ballup = self.R.Next(-4, 5)
 		
