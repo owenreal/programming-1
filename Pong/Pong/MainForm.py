@@ -12,6 +12,7 @@ class MainForm(Form):
 		self.balld = 0
 		self.flagleft = False
 		self.flagright = False
+		self.changed = False
 	
 	def InitializeComponent(self):
 		self._components = System.ComponentModel.Container()
@@ -201,6 +202,8 @@ class MainForm(Form):
 			""" reset other secrets here """
 			self._lblright.Height = 100
 			self._lblleft.Height = 100
+			lblf.BackColor = Color.White
+			lbrt.BackColor = Color.White
 			bl.BackColor = Color.White 
 			self.BackColor = Color.Black
 			title.Visible = True
@@ -281,9 +284,27 @@ class MainForm(Form):
 		self.pdlTick(self._lblright, self.flagright, self._timerright)
 
 	def LblballClick(self, sender, e):
-		self._lblball.BackColor = Color.Red
-		self.BackColor = Color.Green # form bg color
-
+		bl = self._lblball
+		if self.changed == False:
+			self._lblball.BackColor = Color.Black
+			self._lblleft.BackColor = Color.Black
+			self._lblright.Height = 300
+			self._lblright.Top -= 100
+			self._lblleft.Height = 300
+			self._lblleft.Top -= 100
+			self._lblright.BackColor = Color.Black 
+			self.BackColor = Color.Red # form bg color
+			self.changed = True
+		else:
+			bl.BackColor = Color.White 
+			self._lblleft.BackColor = Color.White
+			self._lblright.BackColor = Color.White 
+			self._lblright.Height = 100
+			self._lblright.Top += 100
+			self._lblleft.Top += 100
+			self._lblleft.Height = 100
+			self.BackColor = Color.Black
+			self.changed = False
 	def MainFormSizeChanged(self, sender, e):
 		self._lblright.Left = self.Width = 25 - self._lblright.Width
 		self._lblball.Left = self.Width // 2
